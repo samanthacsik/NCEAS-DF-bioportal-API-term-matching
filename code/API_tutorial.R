@@ -7,7 +7,6 @@
 # output: 
 # resources: https://cran.r-project.org/web/packages/httr/vignettes/api-packages.html, https://github.com/r-lib/httr, https://cran.r-project.org/web/packages/httr/vignettes/quickstart.html 
 
-
 ##############################
 # random notes
 ##############################
