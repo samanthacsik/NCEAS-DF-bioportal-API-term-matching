@@ -1,0 +1,33 @@
+ARC_term_classification,ARC_term
+Vital Sign,Terrestrial Snow Cover
+Vital Sign,Tundra Greenness
+Vital Sign,Surface Air Temp
+Vital Sign,Greenland Ice Sheet
+Vital Sign,ARctic Ocean Primary Productivity
+Vital Sign,Sea Surface Temperature
+Vital Sign,Sea Ice
+Target Variable,"Normalized Difference Vegetation Index (NDVI): MaxNDVI and TI-NDVI (time-integrated) as proxies for ""greenness"""
+Target Variable,Arctic land air temp anomaly
+Target Variable,Global land air temperature anomaly
+Target Variable,Surface Air Temperature
+Target Variable,Snow Cover Extent (Duration)
+Target Variable,Chlorophyll-a concentration
+Target Variable,Summer Warmth Index (SWI)
+Target Variable,Snow Cover Duration
+Target Variable,Sea Surface Temperature
+Target Variable,Near-surface air temperatures
+Target Variable,Geopotential height and Wind
+Target Variable,Seasonal/annual anomaly patterns for air temperatures
+Target Variable,Surface Melt
+Target Variable,Solid Ice discharge (derived from Ice Velocity)
+Target Variable,Sea Ice concentrations
+Target Variable,Sea Ice Extent
+Target Variable,NSIDC Sea Ice Index
+Target Variable,Age of sea ice (NSIDC)
+Target Variable,Snow Depth
+Target Variable,Surface Mass Balance (Also reported as Equilibrium Line Altitude)
+Target Variable,Total Mass Balance
+Target Variable,Ice Ablation
+Target Variable,Surface Albedo
+Target Variable,Marine terminating glacier front annual area change
+Target Variable,"Sea Ice Volumn, Sea Ice Thickness"
