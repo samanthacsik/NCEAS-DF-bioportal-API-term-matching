@@ -25,7 +25,9 @@ make_bioontologyAPI_request <- function(data, term_index){
   param_1 <- paste("text=", search_term, sep = "")
   param_2 <- "ontologies=ENVO,ECSO,IAO,NCBITAXON"
   param_3 <- "apikey=59dbd375-f216-42ad-b85f-5b8d4ccc33c6"
-  
+  # param_4 <- "expand_class_hierarchy=true" 
+  # param_5 <- "class_hierarchy_max_level=5"
+  # 
   # # HTTP request components - FOR SEARCH TAB ENDPOINT - NOT WORKING YET
   # domainURL <- "http://data.bioontology.org"
   # endpoint <- "/search?" 
