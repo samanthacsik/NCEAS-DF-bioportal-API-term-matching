@@ -88,5 +88,24 @@ for(row in 1:nrow(vitalSigns_targetVars)){
 
 }
 
+##########################################################################################
+# 2) Last bit of tidying/wrangling and print
+##########################################################################################
+
+# replace "NA" in num_annotation_matches col with "0"
+vitalSigns_targetVars_VersionA <- vitalSigns_targetVars %>% 
+  mutate(num_annotation_matches = ifelse(num_annotation_matches == "NA", 0, num_annotation_matches))
+
 # save as .csv
-write_csv(vitalSigns_targetVars, here::here("data", "ARC_annotation_matches.csv"))
+write_csv(vitalSigns_targetVars_VersionA, here::here("data", "ARC_annotation_matches.csv"))
+
+# separate URIs into separate columns
+vitalSigns_targetVars_VersionB <- vitalSigns_targetVars %>% 
+  mutate(num_annotation_matches = ifelse(num_annotation_matches == "NA", 0, num_annotation_matches)) %>% 
+  separate(valueURI, c("valueURI_1", "valueURI_2", "valueURI_3",
+                       "valueURI_4", "valueURI_5", "valueURI_6",
+                       "valueURI_7", "valueURI_8", "valueURI_9"), sep = " ")
+
+# save as .csv
+write_csv(vitalSigns_targetVars_VersionB, here::here("data", "ARC_annotation_matches_expanded.csv"))
+

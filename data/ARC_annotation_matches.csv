@@ -1,6 +1,6 @@
 ARC_term_classification,ARC_term,APItext,num_annotation_matches,valueURI
 Vital Sign,Terrestrial Snow Cover,Terrestrial+Snow+Cover,2,http://purl.obolibrary.org/obo/ENVO_01000406 http://purl.dataone.org/odo/ECSO_#http://purl.obolibrary.org/obo/ENVO_01000406
-Vital Sign,Tundra Greenness,Tundra+Greenness,"NA","NA"
+Vital Sign,Tundra Greenness,Tundra+Greenness,0,"NA"
 Vital Sign,Surface Air Temp,Surface+Air+Temp,3,http://purl.obolibrary.org/obo/UBERON_0002416 http://purl.obolibrary.org/obo/ENVO_00002005 http://purl.dataone.org/odo/ECSO_00001104
 Vital Sign,Greenland Ice Sheet,Greenland+Ice+Sheet,6,http://purl.obolibrary.org/obo/ENVO_00000132 http://purl.obolibrary.org/obo/ENVO_00000299 http://purl.obolibrary.org/obo/ENVO_01001125 http://purl.obolibrary.org/obo/ENVO_01001126 http://purl.obolibrary.org/obo/ENVO_01000277 http://purl.obolibrary.org/obo/ENVO_00000131
 Vital Sign,ARctic Ocean Primary Productivity,ARctic+Ocean+Primary+Productivity,3,http://purl.obolibrary.org/obo/ENVO_00000015 http://purl.dataone.org/odo/ECSO_00001154 http://purl.dataone.org/odo/ECSO_00000015
@@ -12,7 +12,7 @@ Target Variable,Global land air temperature anomaly,Global+land+air+temperature+
 Target Variable,Surface Air Temperature,Surface+Air+Temperature,5,http://purl.obolibrary.org/obo/UBERON_0002416 http://purl.dataone.org/odo/ECSO_00001225 http://purl.obolibrary.org/obo/ENVO_09200001 http://purl.obolibrary.org/obo/ENVO_00002005 http://purl.obolibrary.org/obo/PATO_0000146
 Target Variable,Snow Cover Extent (Duration),Snow+Cover+Extent+(Duration),3,http://purl.obolibrary.org/obo/ENVO_01000406 http://purl.dataone.org/odo/ECSO_#http://purl.obolibrary.org/obo/ENVO_01000406 http://purl.dataone.org/odo/ECSO_00001183
 Target Variable,Chlorophyll-a concentration,Chlorophyll-a+concentration,6,http://purl.dataone.org/odo/ECSO_00000516 http://purl.dataone.org/odo/ECSO_00000563 http://purl.obolibrary.org/obo/CHEBI_28966 http://purl.dataone.org/odo/ECSO_00000562 http://purl.dataone.org/odo/ECSO_00001120 http://purl.obolibrary.org/obo/PATO_0000033
-Target Variable,Summer Warmth Index (SWI),Summer+Warmth+Index+(SWI),"NA","NA"
+Target Variable,Summer Warmth Index (SWI),Summer+Warmth+Index+(SWI),0,"NA"
 Target Variable,Snow Cover Duration,Snow+Cover+Duration,3,http://purl.obolibrary.org/obo/ENVO_01000406 http://purl.dataone.org/odo/ECSO_#http://purl.obolibrary.org/obo/ENVO_01000406 http://purl.dataone.org/odo/ECSO_00001183
 Target Variable,Sea Surface Temperature,Sea+Surface+Temperature,6,http://purl.obolibrary.org/obo/ENVO_04000002 http://purl.dataone.org/odo/ECSO_00001523 http://purl.obolibrary.org/obo/ENVO_00000016 http://purl.dataone.org/odo/ECSO_00001526 http://purl.obolibrary.org/obo/UBERON_0002416 http://purl.obolibrary.org/obo/PATO_0000146
 Target Variable,Near-surface air temperatures,Near-surface+air+temperatures,2,http://purl.obolibrary.org/obo/UBERON_0002416 http://purl.obolibrary.org/obo/ENVO_00002005
