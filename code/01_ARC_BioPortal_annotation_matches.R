@@ -93,19 +93,30 @@ for(row in 1:nrow(vitalSigns_targetVars)){
 ##########################################################################################
 
 # replace "NA" in num_annotation_matches col with "0"
-vitalSigns_targetVars_VersionA <- vitalSigns_targetVars %>% 
+vitalSigns_targetVars_original <- vitalSigns_targetVars %>% 
   mutate(num_annotation_matches = ifelse(num_annotation_matches == "NA", 0, num_annotation_matches))
 
 # save as .csv
-write_csv(vitalSigns_targetVars_VersionA, here::here("data", "ARC_annotation_matches.csv"))
+# write_csv(vitalSigns_targetVars_original, here::here("data", "ARC_annotation_matches_original.csv"))
 
 # separate URIs into separate columns
-vitalSigns_targetVars_VersionB <- vitalSigns_targetVars %>% 
+vitalSigns_targetVars_wide <- vitalSigns_targetVars %>% 
   mutate(num_annotation_matches = ifelse(num_annotation_matches == "NA", 0, num_annotation_matches)) %>% 
   separate(valueURI, c("valueURI_1", "valueURI_2", "valueURI_3",
                        "valueURI_4", "valueURI_5", "valueURI_6",
                        "valueURI_7", "valueURI_8", "valueURI_9"), sep = " ")
 
 # save as .csv
-write_csv(vitalSigns_targetVars_VersionB, here::here("data", "ARC_annotation_matches_expanded.csv"))
+# write_csv(vitalSigns_targetVars_wide, here::here("data", "ARC_annotation_matches_wide.csv"))
 
+vitalSigns_targetVars_long <- vitalSigns_targetVars_VersionB %>% 
+  pivot_longer(cols = c("valueURI_1", "valueURI_2", "valueURI_3",
+                        "valueURI_4", "valueURI_5", "valueURI_6",
+                        "valueURI_7", "valueURI_8", "valueURI_9"),
+               names_to = "num_URIs",
+               values_to = "URIs") %>% 
+  select(-num_URIs) %>% 
+  drop_na(URIs)
+
+# save as .csv
+# write_csv(vitalSigns_targetVars_long, here::here("data", "ARC_annotation_matches_long.csv"))
