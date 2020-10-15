@@ -18,17 +18,30 @@ source(here::here("code", "00_libraries.R"))
 
 make_bioontologyAPI_request <- function(data, term_index){
   
-  # HTTP request components
+  # HTTP request components - FOR ANNOTATOR TAB ENDPOINT
   domainURL <- "http://data.bioontology.org"
   endpoint <- "/annotator?"
-  search_term = data$APItext[term_index] 
+  search_term = data$APItext[term_index]
   param_1 <- paste("text=", search_term, sep = "")
   param_2 <- "ontologies=ENVO,ECSO,IAO,NCBITAXON"
-  param_3 <- "apikey=59dbd375-f216-42ad-b85f-5b8d4ccc33c6" 
+  param_3 <- "apikey=59dbd375-f216-42ad-b85f-5b8d4ccc33c6"
   
-  # build request URL
+  # # HTTP request components - FOR SEARCH TAB ENDPOINT - NOT WORKING YET
+  # domainURL <- "http://data.bioontology.org"
+  # endpoint <- "/search?" 
+  # search_term = data$APItext[term_index] 
+  # param_1 <- paste("Greenland+ice+sheet")
+  # param_2 <- "ontologies=ENVO,ECSO,IAO,NCBITAXON" 
+  # param_3 <- "apikey=59dbd375-f216-42ad-b85f-5b8d4ccc33c6" 
+  # param_4 <- "include=prefLabel,synonym,definition,notation,cui,semanticType"
+  
+  # build ANNOTATOR request URL
   query_string <- paste(param_1, param_2, param_3, sep="&")
   request_url <- paste(domainURL, endpoint, query_string, sep="")
+  
+  # # OR build SEARCH request URL - NOT WORKING YET
+  # query_string <- paste(param_1, param_2, param_3, param_4, sep = "&")
+  # request_url <- paste(domainURL, endpoint, query_string, sep = "")
   
   # send request and parse response
   response <- GET(request_url)
