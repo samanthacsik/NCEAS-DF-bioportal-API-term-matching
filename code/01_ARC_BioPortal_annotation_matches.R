@@ -6,7 +6,7 @@
 # input: "data/ARC_vitalSigns_targetVars.csv"
 # output: "data/ARC_annotation_matches.csv"
 # resources: 
-  # BioOntology API Documentation: http://data.bioontology.org/documentation
+  # BioPortal API Documentation: http://data.bioontology.org/documentation
   # Best Practices for API Packages: https://cran.r-project.org/web/packages/httr/vignettes/api-packages.html
   # httr Quickstart Guide: https://cran.r-project.org/web/packages/httr/vignettes/quickstart.html 
   # Annotator Tab Help: http://bioportal.bioontology.org/help?pop=true#Annotator_Tab
@@ -109,7 +109,7 @@ vitalSigns_targetVars_wide <- vitalSigns_targetVars %>%
 # save as .csv
 # write_csv(vitalSigns_targetVars_wide, here::here("data", "ARC_annotation_matches_wide.csv"))
 
-vitalSigns_targetVars_long <- vitalSigns_targetVars_VersionB %>% 
+vitalSigns_targetVars_long <- vitalSigns_targetVars_wide %>% 
   pivot_longer(cols = c("valueURI_1", "valueURI_2", "valueURI_3",
                         "valueURI_4", "valueURI_5", "valueURI_6",
                         "valueURI_7", "valueURI_8", "valueURI_9"),

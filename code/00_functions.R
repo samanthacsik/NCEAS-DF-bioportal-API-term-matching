@@ -10,13 +10,13 @@ source(here::here("code", "00_libraries.R"))
 
 #-----------------------------
 # used in script "01_ARC_BioPortal_annotation_matches.R"
-# function makes request to the BioOntology API and parses the response
+# function makes request to the BioPortal API and parses the response
   # takes arguments:
     # data: df with search terms to be matched with BioOntology annotations (required col = APIterm, where each row is a separate term with "+" separating words (i.e. API-friendly))
     # term_index: row index of a particular search term 
 #-----------------------------
 
-make_bioontologyAPI_request <- function(data, term_index){
+make_bioportalAPI_request <- function(data, term_index){
   
   # HTTP request components - FOR ANNOTATOR TAB ENDPOINT
   domainURL <- "http://data.bioontology.org"
@@ -59,7 +59,7 @@ make_bioontologyAPI_request <- function(data, term_index){
 
 #-----------------------------
 # used in script "01_ARC_BioPortal_annotation_matches.R"
-# function returns the number of annotation matches from ENVO, ECSO, IAO, NCBITAXON using the BioOntology API
+# function returns the number of annotation matches from ENVO, ECSO, IAO, NCBITAXON using the BioPortal API
   # takes arguments:
    # parsed: a list; parsed JSON from BioPortal
 #-----------------------------
